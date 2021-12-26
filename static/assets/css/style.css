@@ -1,3 +1,196 @@
-.heading{
-    color: yellow;
+/* NAVBAR  */
+
+*::selection {
+    background-color: #d6d6d6;
+}
+
+.nav-head {
+    display: flex;
+    justify-content: end;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.para-font {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-head {
+        justify-content: center;
+    }
+}
+
+.nav_link_head {
+    margin-right: 5px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration: 0.325s;
+    transition-timing-function: ease-in-out;
+    font-weight: bold;
+}
+
+.nav_link_head:hover {
+    color: #111218;
+}
+
+
+/* HERO SECTION  */
+
+.hero-img {
+    width: 450px;
+}
+
+.hero-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.hero-img-head {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-heading {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* SERVICES SECTION */
+
+.service-card {
+    border-radius: 12px;
+    border: 0.1px solid #eee;
+    transition-property: all;
+    transition-duration: 0.325s;
+    transition-timing-function: ease-in-out;
+}
+
+.service-card:hover {
+    border: 0.1px solid #111218;
+    cursor: pointer;
+}
+
+
+/* PRICING SECTION  */
+
+.something-diff {
+    background-color: rgb(225, 242, 238);
+}
+
+@media screen and (max-width: 768px) {
+    .boost {
+        padding-top: 0.2rem !important;
+    }
+    .pricing-col {
+        border: 3px solid rgb(225, 242, 238);
+        border-radius: 5px;
+    }
+}
+
+.schedule-btn a {
+    text-decoration: none;
+    display: block;
+    border-radius: 50px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.125s;
+}
+
+.schedule-btn a:hover {
+    background-color: #100249;
+    color: white;
+    cursor: pointer;
+}
+
+.schedule-btn span {
+    font-size: 1.2rem;
+    /* display: block;
+    width: 100%;
+    height: 100%;
+    /* color: rgb(0, 0, 0); */
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    /* transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.125s; */
+}
+
+.schedule-btn a span:hover {
+    background-color: #100249;
+    color: white;
+    cursor: pointer;
+}
+
+.schedule-btn {
+    padding: 0.8rem 1rem;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    color: #000000;
+    border: 2px solid #000000;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.125s;
+}
+
+.schedule-btn:hover {
+    background-color: #100249;
+    color: white;
+    cursor: pointer;
+}
+
+.schedule-btn-1 a {
+    text-decoration: none;
+}
+
+.schedule-btn-1 a span {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.schedule-btn-1 a span:hover {
+    color: rgb(255, 255, 255);
+}
+
+.schedule-btn-1 {
+    padding: 0.8rem 1rem;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(3, 156, 141);
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.schedule-btn-1:hover {
+    background-color: rgb(4, 143, 129);
+    cursor: pointer;
+}
+
+.something-diff-col {
+    background-color: white;
+    width: 28%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .something-diff-col {
+        width: 90%;
+    }
 }
