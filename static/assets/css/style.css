@@ -45,6 +45,10 @@
     width: 450px;
 }
 
+.about-img{
+    width: 450px;
+}
+
 .hero-desc {
     display: flex;
     flex-direction: column;
@@ -79,118 +83,55 @@
 }
 
 
-/* PRICING SECTION  */
-
-.something-diff {
-    background-color: rgb(225, 242, 238);
+/* CONTACT US SECTION  */
+.map-head{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
 }
 
 @media screen and (max-width: 768px) {
-    .boost {
-        padding-top: 0.2rem !important;
-    }
-    .pricing-col {
-        border: 3px solid rgb(225, 242, 238);
-        border-radius: 5px;
-    }
+    .map-head{
+        align-items: center !important;
+    }   
 }
 
-.schedule-btn a {
-    text-decoration: none;
-    display: block;
-    border-radius: 50px;
-    width: 100%;
-    color: rgb(0, 0, 0);
+.name-input, .email-input, .comp-name-input, .website-input, .message-input{
+    outline: none !important;
+    border-radius: 15px !important;
+    border: 0.1rem solid rgb(216, 216, 216) !important;
     transition-property: all;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.125s;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out; 
 }
 
-.schedule-btn a:hover {
-    background-color: #100249;
-    color: white;
-    cursor: pointer;
+.name-input:focus-within{
+    border: 0.1rem solid #111218 !important;
 }
 
-.schedule-btn span {
-    font-size: 1.2rem;
-    /* display: block;
-    width: 100%;
-    height: 100%;
-    /* color: rgb(0, 0, 0); */
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
-    /* transition-property: all;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.125s; */
+.email-input:focus-within{
+    border: 0.1rem solid #111218 !important;
 }
 
-.schedule-btn a span:hover {
-    background-color: #100249;
-    color: white;
-    cursor: pointer;
+.comp-name-input:focus-within{
+    border: 0.1rem solid #111218 !important;
 }
 
-.schedule-btn {
-    padding: 0.8rem 1rem;
-    width: 100%;
-    border-radius: 50px;
-    border: none;
-    color: #000000;
-    border: 2px solid #000000;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.125s;
+.website-input:focus-within{
+    border: 0.1rem solid #111218 !important;
 }
 
-.schedule-btn:hover {
-    background-color: #100249;
-    color: white;
-    cursor: pointer;
+.message-input:focus-within{
+    border: 0.1rem solid #111218 !important;
 }
 
-.schedule-btn-1 a {
-    text-decoration: none;
-}
-
-.schedule-btn-1 a span {
-    font-size: 1.2rem;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-}
-
-.schedule-btn-1 a span:hover {
-    color: rgb(255, 255, 255);
-}
-
-.schedule-btn-1 {
-    padding: 0.8rem 1rem;
-    width: 100%;
-    border-radius: 50px;
-    border: none;
-    background-color: rgb(3, 156, 141);
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
-}
-
-.schedule-btn-1:hover {
-    background-color: rgb(4, 143, 129);
-    cursor: pointer;
-}
-
-.something-diff-col {
-    background-color: white;
-    width: 28%;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 1rem;
-    padding: 2rem 1.5rem;
+.contact-heading{
+    padding-top: 5rem !important;
 }
 
 @media screen and (max-width: 768px) {
-    .something-diff-col {
-        width: 90%;
-    }
+    .contact-heading{
+        padding-top: 2rem !important;
+    }   
 }
