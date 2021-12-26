@@ -28,14 +28,22 @@
     margin-right: 5px;
     padding: 2px 2px 2px 2px;
     border-radius: 20px;
-    transition-property: all;
-    transition-duration: 0.325s;
-    transition-timing-function: ease-in-out;
     font-weight: bold;
 }
 
 .nav_link_head:hover {
     color: #111218;
+}
+
+.nv-link {
+    transition-property: all;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    color: #111218;
+}
+
+.nv-link:hover {
+    color: #5a5a5a;
 }
 
 
@@ -45,7 +53,7 @@
     width: 450px;
 }
 
-.about-img{
+.about-img {
     width: 450px;
 }
 
@@ -84,7 +92,8 @@
 
 
 /* CONTACT US SECTION  */
-.map-head{
+
+.map-head {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
@@ -92,46 +101,206 @@
 }
 
 @media screen and (max-width: 768px) {
-    .map-head{
+    .map-head {
         align-items: center !important;
-    }   
+    }
 }
 
-.name-input, .email-input, .comp-name-input, .website-input, .message-input{
+.name-input,
+.email-input,
+.comp-name-input,
+.website-input,
+.message-input {
     outline: none !important;
     border-radius: 15px !important;
-    border: 0.1rem solid rgb(216, 216, 216) !important;
+    border: 0.1px solid rgb(153, 153, 153) !important;
     transition-property: all;
     transition-duration: 0.25s;
-    transition-timing-function: ease-in-out; 
+    transition-timing-function: ease-in-out;
 }
 
-.name-input:focus-within{
+.name-input:focus-within {
     border: 0.1rem solid #111218 !important;
 }
 
-.email-input:focus-within{
+.email-input:focus-within {
     border: 0.1rem solid #111218 !important;
 }
 
-.comp-name-input:focus-within{
+.comp-name-input:focus-within {
     border: 0.1rem solid #111218 !important;
 }
 
-.website-input:focus-within{
+.website-input:focus-within {
     border: 0.1rem solid #111218 !important;
 }
 
-.message-input:focus-within{
+.message-input:focus-within {
     border: 0.1rem solid #111218 !important;
 }
 
-.contact-heading{
+.contact-heading {
     padding-top: 5rem !important;
 }
 
 @media screen and (max-width: 768px) {
-    .contact-heading{
+    .contact-heading {
         padding-top: 2rem !important;
-    }   
+    }
+}
+
+
+/* FOOTER SECTION  */
+
+.footer {
+    padding-top: 1rem;
+    background-color: #151414;
+}
+
+.contact-box {
+    position: relative;
+}
+
+.contact-icon {
+    width: 2rem;
+    stroke: #ececec;
+    padding-top: 0.5rem;
+    margin-right: 0.2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-icon {
+        width: 4rem;
+    }
+}
+
+.contact-info {
+    margin-top: 0.15rem;
+    padding: 0.4rem;
+    font-weight: 600;
+}
+
+.contact-title {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.contact-title:hover {
+    color: #ececec;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-title {
+        font-size: 1.4rem;
+    }
+}
+
+.contact-sub-title {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-sub-title {
+        font-size: 1rem;
+    }
+}
+
+.footer-social-media {
+    font-family: "Poppins" sans-serif;
+}
+
+.footer-social-media p {
+    font-size: 1.3rem;
+}
+
+.footer-social-media a {
+    color: white;
+}
+
+.footer-social-media a i {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.footer-social-media a:hover {
+    color: #ececec;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-social-media a i {
+        font-size: 1.6rem;
+    }
+}
+
+.comp-name {
+    font-family: "Poppins" sans-serif;
+}
+
+.list-inline li {
+    margin-bottom: 0.57rem;
+    list-style-type: none;
+}
+
+.list-inline li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.list-inline li a:hover {
+    color: #ececec;
+}
+
+.footer-bottom {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-copyright p {
+    font-family: "Poppins" sans-serif;
+    font-size: 1rem;
+}
+
+.footer-copyright p span {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+    font-weight: 600;
+}
+
+.footer-copyright a:hover {
+    color: #ececec;
+    text-decoration: underline;
+}
+
+.copy {
+    color: #6c757d;
+}
+
+.back-to-top {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    z-index: 9999;
+    background-color: #151414 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-to-top i {
+    color: #ececec;
+    font-size: 1rem;
+    text-align: center;
 }

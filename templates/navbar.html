@@ -1,5 +1,5 @@
 {% load static %}
-<nav class="p-0 shadow navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav style="background-color: #ececec;" class="p-0 shadow navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
 
         <a class="navbar-brand" href="{% url 'application:index' %}"><img src="{% static 'assets/img/logo_1.png' %}" alt="logo" class="logo"></a>
@@ -13,28 +13,36 @@
                 <ul class="navbar-nav mb-2 mb-lg-0">
 
                     <li class="nav_link_head nav-item">
-                        <a class="nav-link" aria-current="page" href="{% url 'application:index' %}">Home</a>
+                        <a class="nav-link" aria-current="page" href="{% url 'application:index' %}">
+                            <p class="nv-link m-0 p-0">Home</p>
+                        </a>
                     </li>
 
                     <li class="nav_link_head nav-item">
-                        <a class="nav-link" href="#">Forecasts</a>
+                        <a class="nav-link" href="#">
+                            <p class="nv-link m-0 p-0">Forecasts</p>
+                        </a>
                     </li>
 
 
                     <li class="nav_link_head nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="#">
+                            <p class="nv-link m-0 p-0">Login</p>
+                        </a>
                     </li>
 
                     <li class="nav_link_head nav-item">
-                        <a class="nav-link" href="#">Sign-Up</a>
+                        <a class="nav-link" href="#">
+                            <p class="nv-link m-0 p-0">Sign-Up</p>
+                        </a>
                     </li>
 
                     <li class=nav_link_head nav-item ">
-                        <a class="nav-link " href="#about_us">About Us</a>
+                        <a class="nav-link " href="#about_us "><p class="nv-link m-0 p-0 ">About Us</p></a>
                     </li>
 
                     <li class="nav_link_head nav-item ">
-                        <a class="nav-link " href="#contact-us">Contact Us</a>
+                        <a class="nav-link " href="#contact-us "><p class="nv-link m-0 p-0 ">Contact Us</p></a>
                     </li>
 
 
