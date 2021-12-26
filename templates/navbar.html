@@ -18,24 +18,39 @@
                         </a>
                     </li>
 
+                    {% if user.is_authenticated %}
                     <li class="nav_link_head nav-item">
                         <a class="nav-link" href="#">
                             <p class="nv-link m-0 p-0">Forecasts</p>
                         </a>
                     </li>
 
-
                     <li class="nav_link_head nav-item">
                         <a class="nav-link" href="#">
+                            <p class="nv-link m-0 p-0">News</p>
+                        </a>
+                    </li>
+                    <li class="nav_link_head nav-item">
+                        <a class="nav-link" href="{% url 'application:logout' %}">
+                            <p class="nv-link m-0 p-0">Logout</p>
+                        </a>
+                    </li>
+                    {% else %}
+
+                    <li class="nav_link_head nav-item">
+                        <a class="nav-link" href="{% url 'application:login' %}">
                             <p class="nv-link m-0 p-0">Login</p>
                         </a>
                     </li>
 
                     <li class="nav_link_head nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{% url 'application:signup' %}">
                             <p class="nv-link m-0 p-0">Sign-Up</p>
                         </a>
                     </li>
+
+
+                    {% endif %}
 
                     <li class=nav_link_head nav-item ">
                         <a class="nav-link " href="#about_us "><p class="nv-link m-0 p-0 ">About Us</p></a>
