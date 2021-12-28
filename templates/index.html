@@ -22,7 +22,7 @@
                     <p style="font-size: 1.2rem;" class="para-font p-1 m-0">
                         Hey <strong>{{ user.first_name }} {{ user.last_name }}</strong>, we hope that you are doing good. Click the button below to see the wheather updates of any city.  
                     </p>
-                    <a href="{% url 'application:signup' %}">
+                    <a href="{% url 'application:forecast' %}">
                         <button type="button" class="mt-3 btn btn-outline-dark" style="border-radius: 50px;">See Forecasts</button>
                     </a>
                     {% else %}

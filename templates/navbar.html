@@ -20,7 +20,7 @@
 
                     {% if user.is_authenticated %}
                     <li class="nav_link_head nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{% url 'application:forecast' %}">
                             <p class="nv-link m-0 p-0">Forecasts</p>
                         </a>
                     </li>
