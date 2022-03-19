@@ -7,7 +7,7 @@ Here is the login Page:
 ![image](https://user-images.githubusercontent.com/75914302/159111219-01b9e03b-d741-4c03-af30-2f080354612d.png)
 
 
-After successfully login the user is redirected to the Home Page:
+*After successfully login the user is redirected to the Home Page:*
 
 ![image](https://user-images.githubusercontent.com/75914302/159111237-ccaa6451-92a8-4b77-8e79-715bc53cb7c9.png)
 ![image](https://user-images.githubusercontent.com/75914302/159111247-e1aa4269-713b-4856-b65d-7d1e3a0a45e4.png)
